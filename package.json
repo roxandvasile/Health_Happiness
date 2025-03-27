@@ -1,0 +1,29 @@
+{
+  "name": "health_happiness",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx postcss styles.css -o assets/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roxandvasile/Health_Happiness.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roxandvasile/Health_Happiness/issues"
+  },
+  "homepage": "https://github.com/roxandvasile/Health_Happiness#readme",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "tailwindcss": "^4.0.17"
+  },
+  "devDependencies": {
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1"
+  }
+}
