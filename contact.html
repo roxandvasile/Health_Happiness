@@ -5,102 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Health & Happiness</title>
     <link href="/assets/styles.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
 
-  <body class="font-poppins bg-amber-300">
-    <header class="bg-white shadow-lg fixed w-full top-0 left-0 z-50">
-      <nav class="flex justify-between items-center h-16">
-        <a href="homepage.html">
-          <img
-            src="/dist/images/logo.png"
-            alt="Logo Health & Happiness"
-            class="w-[250px] h-auto ml-[7.5rem]"
-          />
-        </a>
-
-        <ul
-          class="text-(--color-black) font-medium text-base hidden md:flex space-x-8 mr-[7.5rem]"
+  <body>
+    <header
+      class="bg-(--color-white) w-full top-0 left-0 z-50 fixed drop-shadow-lg"
+    >
+      <nav class="flex justify-between items-center h-16 lg:h-20">
+        <div
+          class="w-[12rem] h-[1.688rem] md:w-[16.438rem] md:h-[2.75rem] ml-[30px] md:ml-[60px] xl:ml-[120px]"
         >
-          <li>
-            <a
-              href="homepage.html"
-              class="relative after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
-              >Acasă
-            </a>
-          </li>
-          <li>
-            <a
-              href="despre-noi.html"
-              class="relative after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
-              >Despre Noi
-            </a>
-          </li>
-          <li>
-            <a
-              href="servicii.html"
-              class="relative after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
-              >Servicii
-            </a>
-          </li>
-          <li>
-            <a
-              href="galerie.html"
-              class="relative after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
-              >Galerie
-            </a>
-          </li>
-          <li>
-            <a
-              href="contact.html"
-              class="relative after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full active-page"
-              >Contacte
-            </a>
-          </li>
-        </ul>
+          <a href="homepage.html">
+            <img src="assets/img/logo.png" alt="Logo Health & Happiness" />
+          </a>
+        </div>
+
+        <div
+          id="nav-menu"
+          class="mr-[30px] md:mr-[60px] xl:mr-[120px] absolute top-0 left-[-100%] min-h-[100vh] w-full bg-(--color-black)/90 text-(--color-white) backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:bg-transparent lg:text-(--color-black) lg:static lg:min-h-fit lg:w-auto"
+        >
+          <ul
+            class="flex flex-col items-center gap-8 lg:flex-row text-base lg:text-base font-medium"
+          >
+            <li>
+              <a
+                href="homepage.html"
+                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                >Acasă
+              </a>
+            </li>
+            <li>
+              <a
+                href="despre-noi.html"
+                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                >Despre Noi
+              </a>
+            </li>
+            <li>
+              <a
+                href="servicii.html"
+                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                >Servicii
+              </a>
+            </li>
+            <li>
+              <a
+                href="galerie.html"
+                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                >Galerie
+              </a>
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full active-page"
+                >Contacte
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="mr-[30px] md:mr-[60px] xl:mr-[120px] text-2xl md:text-3xl cursor-pointer z-50 lg:hidden"
+        >
+          <i class="ri-menu-3-line" id="hamburger"></i>
+        </div>
       </nav>
     </header>
 
-    <main class="mt-[180px] z-0 mr-[120px] ml-[120px]">
+    <main>
       <section>
-        <h1
-          class="text-5xl font-medium text-(--color-black) text-center mb-[36px]"
-        >
-          Contactează-ne
-        </h1>
-        <p
-          class="text-lg font-medium text-(--color-black) text-center mb-[30px] mt-[30px] w-[580px] mx-auto"
-        >
+        <h1>Contactează-ne</h1>
+        <p>
           Ai nevoie de o programare sau detalii despre tratamentele noastre?
           Contactează-ne cu încredere!
         </p>
 
-        <div class="flex justify-center space-x-12 mb-[120px]">
+        <div>
           <a href="#">
-            <img
-              src="dist/Images/facebook.png"
-              alt=""
-              class="w-[40px] h-[40px]"
-            />
+            <img src="assets/img/facebook.png" alt="Facebook " />
           </a>
 
           <a href="#">
-            <img
-              src="dist/Images/instagram.png"
-              alt=""
-              class="w-[38px] h-[38px]"
-            />
+            <img src="assets/img/instagram.png" alt="Instagram" />
           </a>
         </div>
       </section>
 
-      <section class="flex items-center justify-center gap-[93px]">
-        <article
-          class="relative bg-(--color-black) text-(--color-white) w-[370px] h-[340px] flex flex-col overflow-hidden group"
-        >
-          <div
-            class="absolute top-0 left-0 w-0 h-0 bg-(--color-green) transition-all duration-400 ease-in group-hover:w-full group-hover:h-full text-left"
-          ></div>
-          <div class="relative z-10 text-left ml-[56px] mt-[70px]">
+      <section>
+        <article>
+          <div></div>
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="54px"
@@ -113,22 +112,17 @@
               />
             </svg>
 
-            <div class="i-line-md:phone-call-loop" style="color: #fff"></div>
-            <h3 class="font-medium text-2xl mt-[30px]">Număr de telefon</h3>
-            <p class="font-normal text-base pt-[20px]">
+            <h3>Număr de telefon</h3>
+            <p>
               <a href="tel:0724 134 974">0724 134 974</a>
             </p>
           </div>
         </article>
 
-        <article
-          class="relative bg-(--color-black) text-(--color-white) w-[370px] h-[340px] flex flex-col overflow-hidden group"
-        >
-          <div
-            class="absolute top-0 left-0 w-0 h-0 bg-(--color-orange) transition-all duration-400 ease-in group-hover:w-full group-hover:h-full text-left"
-          ></div>
+        <article>
+          <div></div>
 
-          <div class="relative z-10 text-left ml-[56px] mt-[70px]">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="54px"
@@ -140,21 +134,15 @@
                 d="m612-120-263-93-179 71q-17 9-33.5-1T120-173v-558q0-13 7.5-23t19.5-15l202-71 263 92 178-71q17-8 33.5 1.5T840-788v565q0 11-7.5 19T814-192l-202 72Zm-34-75v-505l-196-66v505l196 66Zm60 0 142-47v-512l-142 54v505Zm-458-12 142-54v-505l-142 47v512Zm458-493v505-505Zm-316-66v505-505Z"
               />
             </svg>
-            <h3 class="font-medium text-2xl mt-[30px] w-[240px]">Adresa</h3>
-            <p class="font-normal text-base pt-[20px] pr-[44px]">
-              Craiova, Calea Bucuresti, Bl. U11 (parter, lângă Helin Lăpuș)
-            </p>
+            <h3>Adresa</h3>
+            <p>Craiova, Calea Bucuresti, Bl. U11 (parter, lângă Helin Lăpuș)</p>
           </div>
         </article>
 
-        <article
-          class="relative bg-(--color-black) text-(--color-white) w-[370px] h-[340px] flex flex-col overflow-hidden group"
-        >
-          <div
-            class="absolute top-0 left-0 w-0 h-0 bg-(--color-green) transition-all duration-400 ease-in group-hover:w-full group-hover:h-full text-left"
-          ></div>
+        <article>
+          <div></div>
 
-          <div class="relative z-10 text-left ml-[56px] mt-[70px]">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="54px"
@@ -166,8 +154,8 @@
                 d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h434q-3 15-4 30t1 30H145l335 218 151-98q10 9 21 16.67 11 7.68 23 13.33L480-462 140-685v465h680v-360q16.79-4.78 31.4-13.39Q866-602 880-613v393q0 24-18 42t-42 18H140Zm0-580v520-520Zm619.88 90Q714-650 682-682.12q-32-32.12-32-78T682.12-838q32.12-32 78-32T838-837.88q32 32.12 32 78T837.88-682q-32.12 32-78 32Z"
               />
             </svg>
-            <h3 class="font-medium text-2xl mt-[30px]">E-mail</h3>
-            <p class="font-normal text-base pt-[20px]">
+            <h3>E-mail</h3>
+            <p>
               <a href="mailto:alexandru.palada@yahoo.com">
                 alexandru.palada@yahoo.com
               </a>
@@ -184,16 +172,15 @@
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="mt-[120px] w-full drop-shadow-xl"
       ></iframe>
     </main>
-    <h1 class="text-9xl bg-amber-400 font-extrabold">Acasa</h1>
 
-    <footer>
+    <!-- <footer>
       <p>
         Copyright &copy; 2025 | Toate drepturile rezervate | Pagină realizată de
         Vasile Roxana Andreea
       </p>
-    </footer>
+    </footer> -->
+    <script src="main.js"></script>
   </body>
 </html>
