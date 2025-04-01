@@ -4,65 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Servicii | Health & Happiness</title>
-    <link href="/assets/styles.css" rel="stylesheet" />
+    <link href="assets/styles.css" rel="stylesheet" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
   </head>
 
-  <body class="font-poppins">
+  <body>
     <header
-      class="bg-(--color-white) w-full top-0 left-0 z-50 fixed drop-shadow-lg"
+      class="text-(--color-black) bg-(--color-white) w-full top-0 left-0 z-50 fixed drop-shadow-lg"
     >
       <nav class="flex justify-between items-center h-16 lg:h-20">
         <div
-          class="w-[12rem] h-[1.688rem] md:w-[16.438rem] md:h-[2.75rem] ml-[30px] md:ml-[60px] xl:ml-[120px]"
+          class="w-[11rem] h-[1.688rem] md:w-[16.438rem] md:h-[2.75rem] ml-[1.875rem] sm:ml-[3.75rem] lg:ml-[5rem] xl:ml-[7.5rem]"
         >
-          <a href="homepage.html">
+          <a href="homepage.html" class="cursor-pointer">
             <img src="assets/img/logo.png" alt="Logo Health & Happiness" />
           </a>
         </div>
 
         <div
           id="nav-menu"
-          class="mr-[30px] md:mr-[60px] xl:mr-[120px] absolute top-0 left-[-100%] min-h-[100vh] w-full bg-(--color-black)/90 text-(--color-white) backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:bg-transparent lg:text-(--color-black) lg:static lg:min-h-fit lg:w-auto"
+          class="sm:mr-[3.75rem] lg:mr-[5rem] xl:mr-[7.5rem] absolute top-0 left-[-100%] min-h-[100vh] w-full bg-(--color-black)/90 text-(--color-white) flex items-center justify-center duration-300 overflow-hidden lg:bg-transparent lg:text-(--color-black) lg:static lg:min-h-fit lg:w-auto"
         >
           <ul
-            class="flex flex-col items-center gap-8 lg:flex-row text-base lg:text-base font-medium"
+            class="flex flex-col items-center gap-8 lg:flex-row text-base lg:text-base 2xl:text-lg font-medium"
           >
             <li>
               <a
                 href="homepage.html"
-                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full cursor-pointer"
                 >Acasă
               </a>
             </li>
             <li>
               <a
                 href="despre-noi.html"
-                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
                 >Despre Noi
               </a>
             </li>
             <li>
               <a
                 href="servicii.html"
-                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full active-page"
+                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full active-page"
                 >Servicii
               </a>
             </li>
             <li>
               <a
                 href="galerie.html"
-                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
                 >Galerie
               </a>
             </li>
             <li>
               <a
                 href="contact.html"
-                class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
                 >Contacte
               </a>
             </li>
@@ -70,17 +71,24 @@
         </div>
 
         <div
-          class="mr-[30px] md:mr-[60px] xl:mr-[120px] text-2xl md:text-3xl cursor-pointer z-50 lg:hidden"
+          class="mr-[1.875rem] sm:mr-[3.75rem] xl:mr-[7.5rem] text-2xl md:text-3xl cursor-pointer z-50 lg:hidden"
         >
           <i class="ri-menu-3-line" id="hamburger"></i>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h1>Ce tratăm, ce recuperăm</h1>
-        <p>
+    <main class="text-(--color-black) mt-[11.25rem] z-0">
+      <section
+        class="text-center ml-[1.875rem] mr-[1.875rem] sm:ml-[3.75rem] sm:mr-[3.75rem] lg:ml-[5rem] lg:mr-[5rem] xl:ml-[7.5rem] xl:mr-[7.5rem]"
+      >
+        <h1 class="font-medium text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl">
+          Ce tratăm, ce recuperăm
+        </h1>
+
+        <p
+          class="text-sm font-medium sm:text-base lg:text-lg xl:text-xl mt-[26px] mb-[26px] md:mt-[36px] md:mb-[36px] lg:w-[90%] 2xl:w-[70%] mx-auto"
+        >
           În orice moment al vieții pot să apară diverse afecțiuni sau
           traumatisme, care ne limitează capacitatea de mișcare, starea de bine
           fizică dar și emoțională!
@@ -90,32 +98,53 @@
       <section>
         <img
           src="assets/img/pexels-karolina-grabowska-4506166.jpg"
-          alt="Consultație"
+          alt=""
+          class="h-[12rem] object-cover w-screen sm:h-[302px] lg:h-[402px] xl:h-[502px]"
         />
       </section>
 
-      <section>
-        <p>
+      <section
+        class="text-center ml-[1.875rem] mr-[1.875rem] sm:ml-[3.75rem] sm:mr-[3.75rem] lg:ml-[5rem] lg:mr-[5rem] xl:ml-[7.5rem] xl:mr-[7.5rem]"
+      >
+        <p
+          class="text-sm font-medium sm:text-base lg:text-lg xl:text-xl mt-[26px] mb-[26px] md:mt-[36px] md:mb-[36px] lg:mt-[74px] lg:mb-[74px] 2xl:w-[85%] mx-auto"
+        >
           Venim în ajutorul tău, cu rabdare și empatie! Aici vă prezentăm o
           selecție, a celor mai comune afecțiuni pe care le recuperăm, însă
           lista poate continua de aceea nu ezitați să ne cereți ajutorul:
         </p>
       </section>
 
-      <section>
-        <div>
-          <article>
-            <h3>Traumatisme ortopedice</h3>
-            <p>
+      <section
+        class="ml-[1.875rem] mr-[1.875rem] sm:ml-[3.75rem] sm:mr-[3.75rem] lg:ml-[5rem] lg:mr-[5rem] xl:ml-[7.5rem] xl:mr-[7.5rem]"
+      >
+        <div class="grid grid-cols-1 gap-10 md:grid md:grid-cols-2 md:gap-6">
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[63px] flex items-center pl-[24px] lg:uppercase xl:text-lg 2xl:text-xl"
+            >
+              Traumatisme ortopedice
+            </h3>
+
+            <p
+              class="font-light text-base bg-(--color-black) flex flex-col items-center justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[260px] lg:h-[220px] xl:text-lg lg:pr-[30px] xl:pr-[80px] 2xl:text-xl"
+            >
               Recuperare în urma traumatismelor ortopedice, după imobilizare,
               pentru refacerea capacității de mișcare a membrului afectat și a
               forței musculare!
             </p>
           </article>
 
-          <article>
-            <h3>Intervenții chirurgicale</h3>
-            <p>
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[63px] flex items-center pl-[24px] lg:uppercase xl:text-lg 2xl:text-xl"
+            >
+              Intervenții chirurgicale
+            </h3>
+
+            <p
+              class="font-light text-base bg-(--color-black) flex flex-col items-center justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[260px] lg:h-[220px] xl:text-lg lg:pr-[40px] xl:pr-[80px] 2xl:text-xl"
+            >
               Recuperare pre-operatorie și post-operatorie: pregătirea
               pacientului înainte de o intervenție chirurgicală (ex. Artroscopie
               genunchi, Artroplastică de genunchi, Protezare șold - genunchi -
@@ -123,56 +152,94 @@
             </p>
           </article>
 
-          <article>
-            <h3>Afecțiuni ale coloanei vertebrale</h3>
-            <p>
-              Recuperare în afecțiunile coloanei vertebrale - scolioza, cifoza,
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[68px] flex items-center pl-[24px] pr-[16px] lg:uppercase xl:text-lg"
+            >
+              Afecțiuni ale coloanei vertebrale
+            </h3>
+            <p
+              class="font-light text-base bg-(--color-black) flex flex-col items-center justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[160px] xl:text-lg lg:pr-[40px] xl:pr-[80px] 2xl:text-xl"
+            >
+              Recuperare în afecțiunile coloanei vertebrale: scolioza, cifoza,
               lordoza, discopatie, hernie de disc, osteofite la nivelul coloanei
               vertebrale
             </p>
           </article>
 
-          <article>
-            <h3>Recuperare post-Chirurgicală</h3>
-            <p>
-              Recuperare post chirurgical la nivelul coloanei vertebrale -
-              hernii de disc, vertebroplastie, nucleoplastie.
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[68px] flex items-center pl-[24px] pr-[16px] lg:uppercase xl:text-lg"
+            >
+              Recuperare post-chirurgicală
+            </h3>
+            <p
+              class="font-light text-base bg-(--color-black) flex flex-col items-center justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[160px] xl:text-lg lg:pr-[30px] xl:pr-[80px] 2xl:text-xl"
+            >
+              Recuperare post chirurgical la nivelul coloanei vertebrale: hernii
+              de disc, nucleoplastie, vertebroplastie.
             </p>
           </article>
 
-          <article>
-            <h3>Recuperări și afecțiuni</h3>
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[63px] flex items-center pl-[24px] lg:uppercase xl:text-lg"
+            >
+              Recuperări în afecțiuni
+            </h3>
 
-            <div>
+            <div
+              class="font-light text-base bg-(--color-black) flex flex-col justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[210px] xl:text-lg lg:pr-[30px] xl:pr-[80px] 2xl:text-xl"
+            >
               <p>
                 Recuperare în Sindromul de coada de cal, afecțiuni ale
                 coccisului - cocidinia.
               </p>
-              <p>Recuperare în cazul artrozelor - coxartroza, gonartroza.</p>
+              <p class="mt-[20px]">
+                Recuperare în cazul artrozelor, coxartroza și gonartroza.
+              </p>
             </div>
           </article>
 
-          <article>
-            <h3>Recuperări și afecțiuni inflamatorii</h3>
-            <p>
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[63px] flex items-center pl-[24px] lg:uppercase xl:text-lg"
+            >
+              Recuperări în afecțiuni
+            </h3>
+            <p
+              class="font-light text-base bg-(--color-black) flex flex-col items-center justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[210px] xl:text-lg lg:pr-[30px] xl:pr-[80px] 2xl:text-xl"
+            >
               Recuperare în afecțiuni inflamatorii: periartrita
               scapulo-humerală, poliartrita reumatoida, fibromialgia, spondilita
-              anchilozantă, Epicondilita, Tenis Elbow, Golf Elbow.
+              anchilozantă, Golf Elbow, Epicondilita, Tenis Elbow.
             </p>
           </article>
 
-          <article>
-            <h3>Recuperări și afecțiuni</h3>
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[63px] flex items-center pl-[24px] lg:uppercase xl:text-lg"
+            >
+              Recuperări în afecțiuni
+            </h3>
 
-            <div>
+            <div
+              class="font-light text-base bg-(--color-black) flex flex-col justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[160px] xl:text-lg lg:pr-[30px] xl:pr-[80px] 2xl:text-xl"
+            >
               <p>Recuperare în afecțiuni neurologice.</p>
-              <p>Recuperare post-oncologică.</p>
+              <p class="mt-[20px]">Recuperare post-oncologică.</p>
             </div>
           </article>
 
-          <article>
-            <h3>Recuperare articulară</h3>
-            <p>
+          <article class="text-(--color-white)">
+            <h3
+              class="font-semibold text-base bg-(--color-green) h-[63px] flex items-center pl-[24px] lg:uppercase xl:text-lg"
+            >
+              Recuperare articulară
+            </h3>
+            <p
+              class="font-light text-base bg-(--color-black) flex flex-col items-center justify-center pl-[24px] pr-[20px] pt-[20px] pb-[24px] md:h-[160px] xl:text-lg lg:pr-[30px] xl:pr-[80px] 2xl:text-xl"
+            >
               Spargerea osteofitelor calcaneene, de pe fascia plantară, a
               osteofitelor de la nivelul articulațiilor - umăr, șold, genunchi.
             </p>
@@ -181,7 +248,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer
+      class="bottom-0 right-0 text-sm text-center font-light bg-(--color-black) text-(--color-white) pt-[1.375rem] pb-[1.375rem] pl-[1.5rem] pr-[1.5rem] mt-[7.5rem] w-full lg:text-base 2xl:text-lg"
+    >
       <p>
         Copyright &copy; 2025 | Toate drepturile rezervate | Pagină realizată de
         Vasile Roxana Andreea
