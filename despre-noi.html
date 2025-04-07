@@ -4,64 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Despre noi | Health & Happiness</title>
-    <link href="/assets/styles.css" rel="stylesheet" />
+    <link href="assets/styles.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <body class="font-poppins">
+    <body>
       <header
-        class="bg-(--color-white) w-full top-0 left-0 z-50 fixed drop-shadow-lg"
+        class="text-(--color-black) bg-(--color-white) w-full top-0 left-0 z-50 fixed drop-shadow-lg"
       >
         <nav class="flex justify-between items-center h-16 lg:h-20">
           <div
-            class="w-[12rem] h-[1.688rem] md:w-[16.438rem] md:h-[2.75rem] ml-[30px] md:ml-[60px] xl:ml-[120px]"
+            class="w-[11rem] h-[1.688rem] md:w-[16.438rem] md:h-[2.75rem] ml-[1.875rem] sm:ml-[3.75rem] lg:ml-[5rem] xl:ml-[7.5rem]"
           >
-            <a href="homepage.html">
+            <a href="homepage.html" class="cursor-pointer">
               <img src="assets/img/logo.png" alt="Logo Health & Happiness" />
             </a>
           </div>
 
           <div
             id="nav-menu"
-            class="mr-[30px] md:mr-[60px] xl:mr-[120px] absolute top-0 left-[-100%] min-h-[100vh] w-full bg-(--color-black)/90 text-(--color-white) backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:bg-transparent lg:text-(--color-black) lg:static lg:min-h-fit lg:w-auto"
+            class="sm:mr-[3.75rem] lg:mr-[5rem] xl:mr-[7.5rem] absolute top-0 left-[-100%] min-h-[100vh] w-full bg-(--color-black)/90 text-(--color-white) flex items-center justify-center duration-300 overflow-hidden lg:bg-transparent lg:text-(--color-black) lg:static lg:min-h-fit lg:w-auto"
           >
             <ul
-              class="flex flex-col items-center gap-8 lg:flex-row text-base lg:text-base font-medium"
+              class="flex flex-col items-center gap-8 lg:flex-row text-base lg:text-base 2xl:text-lg font-medium"
             >
               <li>
                 <a
                   href="homepage.html"
-                  class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                  class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full cursor-pointer"
                   >Acasă
                 </a>
               </li>
               <li>
                 <a
                   href="despre-noi.html"
-                  class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full active-page"
+                  class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full active-page"
                   >Despre Noi
                 </a>
               </li>
               <li>
                 <a
                   href="servicii.html"
-                  class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                  class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
                   >Servicii
                 </a>
               </li>
               <li>
                 <a
                   href="galerie.html"
-                  class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                  class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
                   >Galerie
                 </a>
               </li>
               <li>
                 <a
                   href="contact.html"
-                  class="nav-link after:block after:h-[2px] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
+                  class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#E98024] after:transition-all after:duration-300 hover:after:w-full"
                   >Contacte
                 </a>
               </li>
@@ -69,124 +69,244 @@
           </div>
 
           <div
-            class="mr-[30px] md:mr-[60px] xl:mr-[120px] text-2xl md:text-3xl cursor-pointer z-50 lg:hidden"
+            class="mr-[1.875rem] sm:mr-[3.75rem] xl:mr-[7.5rem] text-2xl md:text-3xl cursor-pointer z-50 lg:hidden"
           >
             <i class="ri-menu-3-line" id="hamburger"></i>
           </div>
         </nav>
       </header>
 
-      <main>
-        <h1>Împreună, spre o viață mai activă</h1>
+      <main
+        class="text-(--color-black) mt-[11.25rem] ml-[1.875rem] mr-[1.875rem] sm:ml-[3.75rem] sm:mr-[3.75rem] lg:ml-[5rem] lg:mr-[5rem] xl:ml-[7.5rem] xl:mr-[7.5rem]"
+      >
+        <h1
+          class="font-medium text-2xl mb-[30px] sm:mb-[40px] sm:text-4xl lg:text-5xl lg:mb-[60px] 2xl:text-6xl 2xl:mb-[80px] text-center"
+        >
+          Împreună, spre o viață mai activă
+        </h1>
 
         <section>
-          <div>
-            <p>
-              <span class="text-(--color-orange)">În cadrul clinicii</span>
-              Health & Happiness, ne dedicăm fiecare zi pacienților noștri,
-              oferindu-le tratamente eficiente și un mediu primitor. Indiferent
-              de provocările pe care le întâmpini, suntem aici să îți
-              <span class="text-(--color-orange)">oferim suportul</span> necesar
-              <span class="text-(--color-orange)">pentru</span> a-ți recăpăta
-              <span class="text-(--color-orange)"
-                >mobilitatea și starea de bine.</span
-              >
-            </p>
+          <div
+            class="grid grid-cols-1 gap-6 md:grid-cols-12 2xl:gap-16 lg:gap-12"
+          >
+            <div
+              class="font-normal flex flex-col gap-6 md:col-span-6 md:grid 2xl:col-span-5 2xl:text-xl 2xl:max-w-[600px] 2xl:items-center"
+            >
+              <p class="md:text-sm lg:text-base xl:text-lg lg:font-normal">
+                <span class="text-(--color-orange)">În cadrul clinicii</span>
+                Health & Happiness, ne dedicăm fiecare zi pacienților noștri,
+                oferindu-le tratamente eficiente și un mediu primitor.
+                Indiferent de provocările pe care le întâmpini, suntem aici să
+                îți
+                <span class="text-(--color-orange)">oferim suportul</span>
+                necesar <span class="text-(--color-orange)">pentru</span> a-ți
+                recăpăta
+                <span class="text-(--color-orange)"
+                  >mobilitatea și starea de bine.</span
+                >
+              </p>
 
-            <p>
-              <span class="text-(--color-orange)">Echipa noastră</span> de
-              specialiști dedicați
-              <span class="text-(--color-orange)">îți va fi alături</span> pe
-              tot parcursul tratamentului, oferindu-ți îngrijirea de care ai
-              nevoie. Hai să îi cunoști pe cei care îți vor ghida drumul
-              <span class="text-(--color-orange)"
-                >spre o recuperare completă!</span
-              >
-            </p>
+              <p class="md:text-sm lg:text-base xl:text-lg lg:font-normal">
+                În clinica noastră, punem accent pe prevenție și educație
+                medicală, pentru ca tu să îți menții sănătatea pe termen lung.
+              </p>
 
-            <button>
-              <a href="servicii.html">Vezi servicii</a>
-            </button>
-          </div>
+              <p class="md:text-sm lg:text-base xl:text-lg lg:font-normal">
+                <span class="text-(--color-orange)">Echipa noastră</span> de
+                specialiști dedicați
+                <span class="text-(--color-orange)">îți va fi alături</span>
+                pe tot parcursul tratamentului, oferindu-ți îngrijirea de care
+                ai nevoie. Hai să îi cunoști pe cei care îți vor ghida drumul
+                <span class="text-(--color-orange)"
+                  >spre o recuperare completă!</span
+                >
+              </p>
 
-          <div>
-            <img
-              src="assets/img/clinica.jpg"
-              alt="Imagine cu clinica Health & Happiness"
-            />
+              <img
+                src="assets/img/clinica.jpg"
+                alt="Imagine cu clinica Health & Happiness"
+                class="w-full h-full object-cover md:hidden"
+              />
+
+              <div class="hidden lg:block">
+                <button
+                  class="bg-(--color-green) text-(--color-white) font-medium text-base 2xl:text-lg px-6 py-3 rounded-full hover:bg-[#14764a] transition"
+                >
+                  <a href="servicii.html">Vezi servicii</a>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="md:col-start-7 2xl:col-start-6 md:col-end-13 md:row-span-1 hidden md:block"
+            >
+              <img
+                src="assets/img/clinica.jpg"
+                alt="Imagine cu clinica Health & Happiness"
+                class="w-full h-full object-cover md:col-span-7 md:grid md:grid-rows-2 lg:rounded-3xl"
+              />
+            </div>
           </div>
         </section>
 
-        <section>
+        <section class="mt-[60px] md:mt-[80px] lg:mt-[120px]">
           <article>
-            <h2>Palada Alexandru Mihail</h2>
-            <h3>
-              Specialist Recuperare neuro-motorie, fiziokinetoterapeut și
-              recuperare medicală, universitatea de medicina și farmacie
-              specialist terapia Shockwave
-            </h3>
-            <p>
-              De-a lungul a 15 ani de experiență, am avut privilegiul de a
-              colabora cu diverse categorii de pacienți, de la sportivi de
-              performanță până la persoane cu afecțiuni dintre cele mai grave.
-            </p>
-            <p>
-              Abordarea mea se bazează pe o evaluare detaliată și pe dezvoltarea
-              unor programe de terapie personalizate, menită să răspundă
-              nevoilor și obiectivelor fiecarui pacient în parte, utilizând
-              tehnici moderne și eficiente pentru a asigura cele mai bune
-              rezultate!
-            </p>
+            <div
+              class="flex flex-col gap-6 md:flex-row md:justify-between md:gap-10 2xl:gap-30"
+            >
+              <div
+                class="flex flex-col gap-6 md:w-[400px] md:justify-center md:flex-grow"
+              >
+                <h2
+                  class="text-(--color-black) font-semibold text-xl md:text-xl lg:text-2xl xl:text-3xl"
+                >
+                  Palada Alexandru Mihail
+                </h2>
 
-            <img src="assets/img/Alex.jpeg" alt="Palada Alexandru Mihail" />
+                <h3
+                  class="font-medium capitalize text-(--color-gray) md:text-sm lg:text-base xl:text-lg"
+                >
+                  Specialist Recuperare neuro-motorie, fiziokinetoterapeut și
+                  recuperare medicală, universitatea de medicina și farmacie
+                  specialist terapia Shockwave
+                </h3>
+
+                <p
+                  class="text-(--color-black) font-normal md:text-sm lg:text-base xl:text-lg"
+                >
+                  De-a lungul a 15 ani de experiență, am avut privilegiul de a
+                  colabora cu diverse categorii de pacienți, de la sportivi de
+                  performanță până la persoane cu afecțiuni dintre cele mai
+                  grave.
+                </p>
+
+                <p
+                  class="text-(--color-black) font-normal md:text-sm lg:text-base xl:text-lg"
+                >
+                  Abordarea mea se bazează pe o evaluare detaliată și pe
+                  dezvoltarea unor programe de terapie personalizate, menită să
+                  răspundă nevoilor și obiectivelor fiecarui pacient în parte,
+                  utilizând tehnici moderne și eficiente pentru a asigura cele
+                  mai bune rezultate!
+                </p>
+              </div>
+
+              <div class="flex justify-center">
+                <img
+                  src="assets/img/Alex.jpeg"
+                  alt="Palada Alexandru Mihail"
+                  class="w-[300px] h-[420px] object-cover xl:h-[450px] lg:ml-[30px] xl:ml-[60px] 2xl:ml-[100px] 2xl:h-[500px] 2xl:w-[340px] lg:rounded-3xl"
+                />
+              </div>
+            </div>
           </article>
 
-          <article>
-            <h2>Denisa Mădălina Iordache</h2>
-            <h3>
-              Specialist Recuperare neuro-motorie, Fiziokinetoterapeut și
-              recuperare medicală, universitatea de medicină și farmacie
-              specialist terapia shockwave
-            </h3>
-            <p>
-              Cu peste 10 ani de experiență în recuperare, am ajutat mulți
-              pacienți să își îmbunatățească calitatea vieții prin tehnici
-              personalizate de recuperare.
-            </p>
+          <article class="mt-[80px]">
+            <div
+              class="flex flex-col gap-6 md:flex-row md:justify-between md:gap-10 2xl:gap-30"
+            >
+              <div
+                class="flex flex-col gap-6 md:w-[400px] md:justify-center md:flex-grow"
+              >
+                <h2
+                  class="text-(--color-black) font-semibold text-xl md:text-xl lg:text-2xl xl:text-3xl"
+                >
+                  Palada Denisa Mădălina
+                </h2>
 
-            <p>
-              Cred cu tărie că fiecare corp are capacitatea de a se vindeca
-              atunci când primește îngrijirea potrivită, iar scopul meu este să
-              te ghides spre o viață fără durere și cu mai multa libertate de
-              mișcare!
-            </p>
+                <h3
+                  class="font-medium capitalize text-(--color-gray) md:text-sm lg:text-base xl:text-lg"
+                >
+                  Specialist Recuperare neuro-motorie, Fiziokinetoterapeut și
+                  recuperare medicală, universitatea de medicină și farmacie
+                  specialist terapia shockwave
+                </h3>
 
-            <img src="assets/img/Denisa.jpeg" alt="Denisa Mădălina Iordache" />
+                <p
+                  class="text-(--color-black) font-normal md:text-sm lg:text-base xl:text-lg"
+                >
+                  Cu peste 10 ani de experiență în recuperare, am ajutat mulți
+                  pacienți să își îmbunatățească calitatea vieții prin tehnici
+                  personalizate de recuperare.
+                </p>
+
+                <p
+                  class="text-(--color-black) font-normal md:text-sm lg:text-base xl:text-lg"
+                >
+                  Cred cu tărie că fiecare corp are capacitatea de a se vindeca
+                  atunci când primește îngrijirea potrivită, iar scopul meu este
+                  să te ghidez spre o viață fără durere și cu mai multa
+                  libertate de mișcare!
+                </p>
+              </div>
+
+              <div class="flex justify-center">
+                <img
+                  src="assets/img/Denisa.jpeg"
+                  alt="Denisa Mădălina Iordache"
+                  class="w-[300px] h-[420px] object-cover xl:h-[450px] lg:ml-[30px] xl:ml-[60px] 2xl:ml-[100px] 2xl:h-[500px] 2xl:w-[340px] lg:rounded-3xl"
+                />
+              </div>
+            </div>
           </article>
-        </section>
-
-        <section>
-          <h2>Misiunea cabinetului nostru</h2>
-          <p>
-            Credem că fiecare persoană merită șansa la o viață activă și
-            echilibrată, indiferent de vârstă sau statut social. În momentele
-            dificile, suntem aici pentru a te sprijini. Misiunea noastră este să
-            îți redăm mobilitatea, încrederea și starea de bine.
-          </p>
-        </section>
-
-        <section>
-          <h2>Ai nevoie de recuperare medicală?</h2>
-          <p>
-            HEALTH & Happines, vine in sprijinul tau cu tratamente personalizate
-            si aparatură modernă.
-          </p>
-
-          <button class="button">Contactează-ne</button>
         </section>
       </main>
 
-      <footer>
+      <section class="mt-[60px] md:mt-[80px] lg:mt-[120px]">
+        <div
+          class="w-full h-[374px] bg-(--color-black) text-(--color-white) text-center flex flex-col items-center justify-center gap-5 sm:gap-8 sm:h-[334px] md:h-[382px]"
+        >
+          <h2
+            class="text-xl font-semibold pl-[54px] pr-[54px] sm:text-xl md:text-3xl lg:text-4xl"
+          >
+            Misiunea cabinetului nostru
+          </h2>
+
+          <p
+            class="text-base font-normal pl-[24px] pr-[24px] sm:max-w-[70%] md:max-w-[80%] lg:max-w-[60%] sm:pl-0 sm:pr-0 xl:text-lg 2xl:text-xl"
+          >
+            <span class="text-(--color-orange)">Credem că</span> fiecare
+            persoană merită șansa la o
+            <span class="text-(--color-orange)">viață activă</span> și
+            echilibrată, indiferent de vârstă sau statut social. În momentele
+            dificile, suntem aici pentru a te sprijini. Misiunea noastră
+            <span class="text-(--color-orange)">este</span> să îți redăm
+            mobilitatea, încrederea și
+            <span class="text-(--color-orange)">starea de bine</span>.
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-[60px] md:mt-[80px] lg:mt-[120px]">
+        <div
+          class="text-(--color-black) text-center flex flex-col items-center justify-center gap-5 sm:gap-8"
+        >
+          <h2
+            class="text-xl font-semibold pl-[54px] pr-[54px] sm:text-xl md:text-3xl lg:text-4xl"
+          >
+            Ai nevoie de recuperare medicală?
+          </h2>
+          <p
+            class="text-base font-normal pl-[24px] pr-[24px] sm:max-w-[60%] md:max-w-[70%] lg:max-w-[50%] xl:max-w-[40%] sm:pl-0 sm:pr-0 xl:text-lg 2xl:text-xl"
+          >
+            <span class="text-(--color-orange)">Health & Happines, vine</span>
+            in sprijinul tau
+            <span class="text-(--color-orange)">cu</span> tratamente
+            personalizate si
+            <span class="text-(--color-orange)">aparatură modernă</span>.
+          </p>
+
+          <button
+            class="bg-(--color-green) text-(--color-white) font-medium text-base 2xl:text-lg px-6 py-3 rounded-full hover:bg-[#14764a] transition"
+          >
+            <a href="contact.html">Contactează-ne</a>
+          </button>
+        </div>
+      </section>
+
+      <footer
+        class="bottom-0 right-0 text-sm text-center font-light bg-(--color-black) text-(--color-white) pt-[1.375rem] pb-[1.375rem] pl-[1.5rem] pr-[1.5rem] mt-[60px] md:mt-[80px] w-full lg:text-base 2xl:text-lg"
+      >
         <p>
           Copyright &copy; 2025 | Toate drepturile rezervate | Pagină realizată
           de Vasile Roxana Andreea
