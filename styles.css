@@ -5,11 +5,11 @@
 
 @theme {
   --font-poppins: "Poppins", sans-serif;
-  --color-green: #19935d;
-  --color-orange: #e98024;
-  --color-white: #f5f2ec;
-  --color-black: #4b4b4b;
-  --color-gray: #374151;
+  --color-white: #fff;
+  --color-gray: #626161;
+  --color-black: #21333d;
+  --color-green: #118f7a;
+  --color-yellow: #f5c54d;
 }
 
 body {
@@ -21,5 +21,5 @@ body {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #e98024;
+  background-color: #f5c54d;
 }
