@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,71 +13,161 @@
   </head>
 
   <body>
-    <header
-      class="text-(--color-black) bg-(--color-white) w-full top-0 left-0 z-50 fixed drop-shadow-lg"
+    <div
+      class="absolute inset-x-0 top-0 z-50 bg-(--color-white) drop-shadow-lg"
     >
-      <nav class="flex justify-between items-center h-16 lg:h-20">
-        <div
-          class="w-[11rem] h-[1.688rem] ml-[1.875rem] md:w-[16.438rem] md:h-[2.75rem] sm:ml-[3.75rem] lg:ml-[5rem] xl:ml-[7.5rem]"
-        >
-          <a href="index.html" class="cursor-pointer">
-            <img src="assets/img/logo.png" alt="Logo Health & Happiness" />
-          </a>
-        </div>
+      <nav
+        class="flex items-center justify-between my-[16px] mx-8 lg:mx-14 xl:mx-[92px]"
+      >
+        <a href="homepage.html">
+          <img
+            src="assets/img/logo.png"
+            alt="Logo Health & Happiness"
+            class="h-8 w-auto 2xl:h-10"
+          />
+        </a>
 
-        <div
-          id="nav-menu"
-          class="bg-(--color-black)/90 text-(--color-white) w-full absolute top-0 left-[-100%] min-h-[100vh] flex items-center justify-center duration-300 overflow-hidden sm:mr-[3.75rem] lg:mr-[5rem] xl:mr-[7.5rem] lg:bg-transparent lg:text-(--color-black) lg:static lg:min-h-fit lg:w-auto"
-        >
-          <ul
-            class="text-base font-medium flex flex-col items-center gap-8 lg:flex-row lg:text-base 2xl:text-lg"
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            command="show-modal"
+            commandfor="mobile-menu"
+            class="inline-flex items-center justify-center rounded-lg text-(--color-black)"
           >
-            <li>
-              <a
-                href="index.html"
-                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#f5c54d] after:transition-all after:duration-300 hover:after:w-full cursor-pointer"
-                >Acasă
-              </a>
-            </li>
-            <li>
-              <a
-                href="despre-noi.html"
-                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#f5c54d] after:transition-all after:duration-300 hover:after:w-full"
-                >Despre Noi
-              </a>
-            </li>
-            <li>
-              <a
-                href="servicii.html"
-                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#f5c54d] after:transition-all after:duration-300 hover:after:w-full"
-                >Servicii
-              </a>
-            </li>
-            <li>
-              <a
-                href="galerie.html"
-                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#f5c54d] after:transition-all after:duration-300 hover:after:w-full active-page"
-                >Galerie
-              </a>
-            </li>
-            <li>
-              <a
-                href="contact.html"
-                class="nav-link after:block after:h-[0.125rem] after:w-0 after:bg-[#f5c54d] after:transition-all after:duration-300 hover:after:w-full"
-                >Contacte
-              </a>
-            </li>
-          </ul>
+            <span class="sr-only">Open main menu</span>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              data-slot="icon"
+              aria-hidden="true"
+              class="size-9"
+            >
+              <path
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
 
-        <div
-          class="text-2xl md:text-3xl mr-[1.875rem] cursor-pointer z-50 sm:mr-[3.75rem] xl:mr-[7.5rem] lg:hidden"
-        >
-          <i class="ri-menu-3-line" id="hamburger"></i>
+        <div class="hidden lg:flex justify-center lg:gap-x-4 xl:gap-x-9">
+          <a
+            href="homepage.html"
+            class="text-sm font-medium text-(--color-gray) uppercase lg:text-[16px] xl:text-[18px] transition-colors duration-200 hover:text-(--color-black) hover:font-semibold"
+            >Acasă</a
+          >
+          <a
+            href="despre-noi.html"
+            class="text-sm font-medium text-(--color-gray) uppercase lg:text-[16px] xl:text-[18px] transition-colors duration-200 hover:text-(--color-black) hover:font-semibold"
+            >Despre noi</a
+          >
+          <a
+            href="servicii.html"
+            class="text-sm font-medium text-(--color-gray) uppercase lg:text-[16px] xl:text-[18px] transition-colors duration-200 hover:text-(--color-black) hover:font-semibold"
+            >Servicii</a
+          >
+          <a
+            href="galerie.html"
+            class="text-sm font-medium text-(--color-gray) uppercase lg:text-[16px] xl:text-[18px] transition-colors duration-200 hover:text-(--color-black) hover:font-semibold nav-link-active"
+            >Galerie</a
+          >
+          <a
+            href="contact.html"
+            class="text-sm font-medium text-(--color-gray) uppercase lg:text-[16px] xl:text-[18px] transition-colors duration-200 hover:text-(--color-black) hover:font-semibold"
+            >Contact</a
+          >
+        </div>
+
+        <div class="hidden lg:flex justify-end">
+          <a
+            href="tel:0724134974"
+            class="flex items-center rounded-lg gap-3 bg-(--color-orange) px-[18px] py-[8px] text-[14px] 2xl:text-[18px] font-medium text-(--color-white) hover:bg-orange-400"
+            ><span aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 256 256"
+              >
+                <path
+                  fill="#fff"
+                  d="M146.2 46.45a6 6 0 0 1 7.35-4.25a84.24 84.24 0 0 1 60.25 60.25a6 6 0 0 1-4.25 7.35a6 6 0 0 1-1.55.2a6 6 0 0 1-5.8-4.45a72.34 72.34 0 0 0-51.75-51.75a6 6 0 0 1-4.25-7.35m-3.75 39.35C157 89.68 166.32 99 170.2 113.55A6 6 0 0 0 176 118a6 6 0 0 0 1.55-.2a6 6 0 0 0 4.25-7.35c-5-18.71-17.54-31.25-36.25-36.25a6 6 0 1 0-3.1 11.6m79.44 97A54.25 54.25 0 0 1 168 230C89.7 230 26 166.3 26 88a54.25 54.25 0 0 1 47.17-53.89a14 14 0 0 1 14.56 8.39l21.1 47.1a14 14 0 0 1-1.12 13.28a6 6 0 0 1-.42.57l-21.07 25.06a1.89 1.89 0 0 0 0 1.67c7.66 15.68 24.1 32 40 39.65a1.88 1.88 0 0 0 1.68-.06l24.69-21a5 5 0 0 1 .56-.42a14 14 0 0 1 13.28-1.22l47.24 21.17a14 14 0 0 1 8.22 14.53ZM210 181.32a2 2 0 0 0-1.21-2l-47.25-21.17a1.92 1.92 0 0 0-1.6.1l-24.68 21c-.18.15-.37.29-.56.42a14 14 0 0 1-13.77 1c-18.36-8.87-36.66-27-45.53-45.19a14 14 0 0 1 .91-13.73a5 5 0 0 1 .43-.57l21.05-25.09a2 2 0 0 0 0-1.67L76.74 47.31A2 2 0 0 0 74.9 46h-.23A42.24 42.24 0 0 0 38 88c0 71.68 58.32 130 130 130a42.24 42.24 0 0 0 42-36.68"
+                />
+              </svg> </span
+            >0724 134 974</a
+          >
         </div>
       </nav>
-    </header>
 
+      <el-dialog>
+        <dialog id="mobile-menu" class="lg:hidden">
+          <div tabindex="0" class="fixed inset-0">
+            <el-dialog-panel
+              class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-(--color-white) p-6 sm:max-w-sm"
+            >
+              <div class="flex items-center justify-between sm:justify-end">
+                <a href="homepage.html" class="sm:hidden">
+                  <span class="sr-only">Health & Happiness</span>
+                  <img src="assets/img/logo.png" alt="" class="h-8 w-auto" />
+                </a>
+                <button
+                  type="button"
+                  command="close"
+                  commandfor="mobile-menu"
+                  class="text-(--color-black)"
+                >
+                  <span class="sr-only">Close menu</span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    data-slot="icon"
+                    aria-hidden="true"
+                    class="size-9"
+                  >
+                    <path
+                      d="M6 18 18 6M6 6l12 12"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="mt-6 flow-root">
+                <a
+                  href="homepage.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-[16px] font-medium uppercase text-(--color-black) nav-link-active"
+                  >Acasă</a
+                >
+                <a
+                  href="despre-noi.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-[16px] font-medium uppercase text-(--color-gray)"
+                  >Despre noi</a
+                >
+                <a
+                  href="servicii.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-[16px] font-medium uppercase text-(--color-gray)"
+                  >Servicii</a
+                >
+                <a
+                  href="galerie.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-[16px] font-medium uppercase text-(--color-gray)"
+                  >Galerie</a
+                ><a
+                  href="contact.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-[16px] font-medium uppercase text-(--color-gray)"
+                  >Contact</a
+                >
+              </div>
+            </el-dialog-panel>
+          </div>
+        </dialog>
+      </el-dialog>
+    </div>
     <main
       class="text-(--color-black) mt-[11.25rem] ml-[1.875rem] mr-[1.875rem] sm:ml-[3.75rem] sm:mr-[3.75rem] lg:ml-[5rem] lg:mr-[5rem] xl:ml-[7.5rem] xl:mr-[7.5rem]"
     >
@@ -126,7 +216,7 @@
           <div class="col-span-1 lg:col-span-7 grid grid-rows-2 gap-6">
             <img
               class="w-full h-full object-cover"
-              src="assets/img/WhatsApp Image 2025-02-24 at 18.33.09.jpeg"
+              src="assets/img/despre-noi-homepage.png"
               alt="Clinica Health & Happiness"
             />
 
@@ -208,13 +298,254 @@
       </div>
     </section>
 
-    <footer
-      class="bg-(--color-black) text-(--color-white) text-sm text-center font-light bottom-0 right-0 pt-[1.375rem] pb-[1.375rem] pl-[1.5rem] pr-[1.5rem] w-full lg:text-base 2xl:text-lg"
-    >
-      <p>
-        Copyright &copy; 2025 | Toate drepturile rezervate | Pagină realizată de
-        Vasile Roxana Andreea
-      </p>
+    <footer class="w-full bg-(--color-soft-mist)">
+      <div class="mx-[32px] lg:mx-[56px] xl:mx-[92px]">
+        <div
+          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 py-8 gap-y-8"
+        >
+          <div class="col-span-full mb-10 xl:col-span-2 lg:mb-0">
+            <a href="homepage.html" class="flex justify-start">
+              <img
+                src="assets/img/logo.png"
+                alt="Logo Health & Happiness"
+                class="h-8 w-auto 2xl:h-10"
+              />
+            </a>
+            <p class="py-8 text-sm text-(--color-gray) text-left">
+              Cabinet de recuperare medicală din Craiova, specializat în
+              kinetoterapie, fizioterapie și terapii moderne, cu planuri de
+              tratament personalizate pentru fiecare pacient.
+            </p>
+            <a
+              href="contact.html"
+              target="_blank"
+              class="inline-flex items-center justify-center rounded-lg bg-(--color-green) px-[28px] py-[14px] text-sm md:text-base font-semibold text-(--color-white) hover:bg-green-500 transition-colors"
+            >
+              Contactează-ne
+            </a>
+          </div>
+          <!-- WRAPPER DREAPTA -->
+          <div
+            class="col-span-full lg:col-span-4 flex flex-col md:flex-row xl:justify-end gap-12"
+          >
+            <!-- Navigare -->
+            <div>
+              <h4 class="text-lg font-semibold text-(--color-black) mb-7">
+                Navigare
+              </h4>
+              <ul class="text-sm space-y-4">
+                <li>
+                  <a
+                    href="homepage.html"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                    >Acasă</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="despre-noi.html"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                    >Despre noi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="servicii.html"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                    >Servicii</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="galerie.html"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                    >Galerie</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Program -->
+            <div>
+              <h4 class="text-lg font-semibold text-(--color-black) mb-7">
+                Program
+              </h4>
+              <ul class="text-sm space-y-4 font-medium text-(--color-gray)">
+                <li>Luni 09:00 - 14:00</li>
+                <li>Marți 09:00 - 20:00</li>
+                <li class="whitespace-nowrap">Miercuri 09:00 - 14:00</li>
+                <li>Joi 09:00 - 20:00</li>
+                <li>Vineri 08:30 - 12:00</li>
+              </ul>
+            </div>
+            <!-- Contacte -->
+            <div>
+              <h4 class="text-lg text-(--color-black) font-semibold mb-7">
+                Contacte
+              </h4>
+              <ul class="text-sm space-y-5">
+                <li class="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 256 256"
+                  >
+                    <path
+                      fill="#00b74c"
+                      d="M144.27 45.93a8 8 0 0 1 9.8-5.66a86.22 86.22 0 0 1 61.66 61.66a8 8 0 0 1-5.66 9.8a8.2 8.2 0 0 1-2.07.27a8 8 0 0 1-7.73-5.94a70.35 70.35 0 0 0-50.33-50.33a8 8 0 0 1-5.67-9.8m-2.33 41.8c13.79 3.68 22.65 12.54 26.33 26.33A8 8 0 0 0 176 120a8.2 8.2 0 0 0 2.07-.27a8 8 0 0 0 5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8 8 0 1 0-4.13 15.46m81.94 95.35A56.26 56.26 0 0 1 168 232C88.6 232 24 167.4 24 88a56.26 56.26 0 0 1 48.92-55.88a16 16 0 0 1 16.62 9.52l21.12 47.15v.12a16 16 0 0 1-1.27 15.09c-.18.27-.37.52-.57.77L88 129.45c7.49 15.22 23.41 31 38.83 38.51l24.34-20.71a8 8 0 0 1 .75-.56a16 16 0 0 1 15.17-1.4l.13.06l47.11 21.11a16 16 0 0 1 9.55 16.62m-15.88-2h-.11l-47-21.05l-24.35 20.71a8 8 0 0 1-.74.56a16 16 0 0 1-15.75 1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16 16 0 0 1 1-15.7a6 6 0 0 1 .57-.77L96 95.15l-21-47a.6.6 0 0 1 0-.12A40.2 40.2 0 0 0 40 88a128.14 128.14 0 0 0 128 128a40.21 40.21 0 0 0 40-34.93Z"
+                    />
+                  </svg>
+                  <a
+                    href="tel:0724134974"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                  >
+                    0724 134 974
+                  </a>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      fill="#00b74c"
+                      d="M19 24H4L3.997 8.906l11.434 7.916a1 1 0 0 0 1.138 0L28 8.91V18h2V8a2.003 2.003 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2.003 2.003 0 0 0 2 2h15Zm6.799-16L16 14.784L6.201 8Z"
+                    />
+                    <circle cx="26" cy="24" r="4" fill="#00b74c" />
+                  </svg>
+                  <a
+                    href="mailto:alexandru.palada@yahoo.com"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                  >
+                    alexandru.palada@yahoo.com
+                  </a>
+                </li>
+                <li class="flex items-center gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 32 32"
+                  >
+                    <path
+                      fill="#00b74c"
+                      d="M19 24H4L3.997 8.906l11.434 7.916a1 1 0 0 0 1.138 0L28 8.91V18h2V8a2.003 2.003 0 0 0-2-2H4a2 2 0 0 0-2 2v16a2.003 2.003 0 0 0 2 2h15Zm6.799-16L16 14.784L6.201 8Z"
+                    />
+                    <circle cx="26" cy="24" r="4" fill="#00b74c" />
+                  </svg>
+                  <a
+                    href="mailto:iordache.denisa@yahoo.com"
+                    class="font-medium text-(--color-gray) hover:text-(--color-orange)"
+                  >
+                    iordache.denisa@yahoo.com
+                  </a>
+                </li>
+                <li class="flex items-start gap-3">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="#00b74c"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="10" r="3" />
+                      <path
+                        d="M12 2a8 8 0 0 0-8 8c0 1.892.402 3.13 1.5 4.5L12 22l6.5-7.5c1.098-1.37 1.5-2.608 1.5-4.5a8 8 0 0 0-8-8"
+                      />
+                    </g>
+                  </svg>
+                  <span class="font-medium text-(--color-gray)">
+                    Craiova, Calea București, Bl. U11 (parter)
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- END WRAPPER DREAPTA -->
+        </div>
+        <!--Grid-->
+        <div class="py-7 border-t border-gray-200">
+          <div
+            class="flex items-start justify-start flex-col lg:item-center lg:justify-between lg:flex-row"
+          >
+            <span class="font-medium text-sm text-(--color-gray)"
+              >©
+              <a href="https://cabinetrecuperare.ro/" target="_blank"
+                >Health & Happiness</a
+              >
+              2026 - All Rights reserved | Pagină realizată de
+              <a
+                href="https://www.facebook.com/profile.php?id=100003889498544"
+                target="_blank"
+                >Vasile Roxana Andreea</a
+              ></span
+            >
+            <div class="flex mt-4 space-x-4 lg:mt-0">
+              <a
+                href="https://www.facebook.com/profile.php?id=61566738747374"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-(--color-green) flex justify-center items-center hover:bg-(--color-orange)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#fff"
+                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.instagram.com/cabinet.health_happiness/"
+                target="_blank"
+                class="w-9 h-9 rounded-full bg-(--color-green) flex justify-center items-center hover:bg-(--color-orange)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <g fill="none" stroke="#fff" stroke-width="1.5">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"
+                    />
+                    <path
+                      d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m17.5 6.51l.01-.011"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script src="main.js"></script>

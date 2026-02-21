@@ -6,10 +6,11 @@
 @theme {
   --font-poppins: "Poppins", sans-serif;
   --color-white: #fff;
-  --color-gray: #626161;
-  --color-black: #21333d;
-  --color-green: #118f7a;
-  --color-yellow: #f5c54d;
+  --color-soft-mist: #f3f4f2;
+  --color-gray: #4a4a4a;
+  --color-black: #1f1f1f;
+  --color-green: #00b74c;
+  --color-orange: #ea7f23;
 }
 
 body {
@@ -21,5 +22,63 @@ body {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #f5c54d;
+  background-color: #ea7f23;
+}
+
+.nav-link-active {
+  @apply font-semibold text-[#1f1f1f];
+}
+
+.swiper-pagination {
+  --swiper-pagination-color: #00b74c;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-width: 12px;
+}
+
+.swiper-button-prev {
+  --swiper-theme-color: #4a4a4a;
+  --swiper-navigation-size: 25px;
+}
+
+.swiper-button-next {
+  --swiper-theme-color: #4a4a4a;
+  --swiper-navigation-size: 25px;
+}
+
+.testimoniale-swiper .swiper-button-prev,
+.testimoniale-swiper .swiper-button-next {
+  position: relative;
+  top: unset;
+  left: unset;
+  right: unset;
+  bottom: unset;
+  transform: none;
+  margin: 0;
+}
+
+.faq.active .answer {
+  max-height: 500px;
+}
+
+.faq.active .faq-title {
+  color: #00b74c;
+}
+
+.faq.active .icon {
+  color: #00b74c;
+  transform: rotate(45deg);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  width: max-content;
+  animation: marquee 25s linear infinite;
 }
