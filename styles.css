@@ -8,19 +8,12 @@
   --color-gray: #4a4a4a;
   --color-black: #1f1f1f;
   --color-green: #00b74c;
+  --color-black-green: #00421c;
   --color-orange: #ea7f23;
 }
 
 body {
   @apply bg-(--color-white) font-poppins tracking-wider;
-}
-
-.active-page::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #ea7f23;
 }
 
 .nav-link-active {
