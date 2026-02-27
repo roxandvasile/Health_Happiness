@@ -6,10 +6,16 @@
     <title>Galerie | Health & Happiness</title>
     <link href="assets/styles.css" rel="stylesheet" />
     <link rel="canonical" href="https://cabinetrecuperare.ro/galerie" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <div
+    <header
       class="absolute inset-x-0 top-0 z-50 bg-(--color-white) drop-shadow-lg"
     >
       <nav
@@ -80,7 +86,7 @@
         <div class="hidden lg:flex justify-end">
           <a
             href="tel:0724134974"
-            class="flex items-center rounded-lg gap-3 bg-(--color-orange) px-[18px] py-[8px] text-[14px] 2xl:text-[18px] font-medium text-(--color-white) hover:bg-orange-400"
+            class="flex items-center rounded-lg gap-3 bg-(--color-orange) px-[18px] py-[8px] text-[14px] 2xl:text-[18px] font-medium text-[#0A0A0A] hover:bg-orange-400"
             ><span aria-hidden="true">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +95,7 @@
                 viewBox="0 0 256 256"
               >
                 <path
-                  fill="#fff"
+                  fill="#0A0A0A"
                   d="M146.2 46.45a6 6 0 0 1 7.35-4.25a84.24 84.24 0 0 1 60.25 60.25a6 6 0 0 1-4.25 7.35a6 6 0 0 1-1.55.2a6 6 0 0 1-5.8-4.45a72.34 72.34 0 0 0-51.75-51.75a6 6 0 0 1-4.25-7.35m-3.75 39.35C157 89.68 166.32 99 170.2 113.55A6 6 0 0 0 176 118a6 6 0 0 0 1.55-.2a6 6 0 0 0 4.25-7.35c-5-18.71-17.54-31.25-36.25-36.25a6 6 0 1 0-3.1 11.6m79.44 97A54.25 54.25 0 0 1 168 230C89.7 230 26 166.3 26 88a54.25 54.25 0 0 1 47.17-53.89a14 14 0 0 1 14.56 8.39l21.1 47.1a14 14 0 0 1-1.12 13.28a6 6 0 0 1-.42.57l-21.07 25.06a1.89 1.89 0 0 0 0 1.67c7.66 15.68 24.1 32 40 39.65a1.88 1.88 0 0 0 1.68-.06l24.69-21a5 5 0 0 1 .56-.42a14 14 0 0 1 13.28-1.22l47.24 21.17a14 14 0 0 1 8.22 14.53ZM210 181.32a2 2 0 0 0-1.21-2l-47.25-21.17a1.92 1.92 0 0 0-1.6.1l-24.68 21c-.18.15-.37.29-.56.42a14 14 0 0 1-13.77 1c-18.36-8.87-36.66-27-45.53-45.19a14 14 0 0 1 .91-13.73a5 5 0 0 1 .43-.57l21.05-25.09a2 2 0 0 0 0-1.67L76.74 47.31A2 2 0 0 0 74.9 46h-.23A42.24 42.24 0 0 0 38 88c0 71.68 58.32 130 130 130a42.24 42.24 0 0 0 42-36.68"
                 />
               </svg> </span
@@ -163,7 +169,8 @@
           </div>
         </dialog>
       </el-dialog>
-    </div>
+    </header>
+
     <main
       class="text-(--color-black) mt-[11.25rem] ml-[1.875rem] mr-[1.875rem] sm:ml-[3.75rem] sm:mr-[3.75rem] lg:ml-[5rem] lg:mr-[5rem] xl:ml-[7.5rem] xl:mr-[7.5rem]"
     >
@@ -296,10 +303,8 @@
 
     <footer class="w-full bg-(--color-soft-mist)">
       <div class="mx-[32px] lg:mx-[56px] xl:mx-[92px]">
-        <div
-          class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 py-8 gap-y-8"
-        >
-          <div class="col-span-full mb-10 xl:col-span-2 lg:mb-0">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-3 py-8 gap-y-8">
+          <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
             <a href="index.html" class="flex justify-start">
               <img
                 src="assets/img/logo.png"
@@ -307,7 +312,9 @@
                 class="h-8 w-auto 2xl:h-10"
               />
             </a>
-            <p class="py-8 text-sm text-(--color-gray) text-left">
+            <p
+              class="py-8 text-sm text-(--color-gray) text-left lg:w-[90%] text-pretty leading-relaxed"
+            >
               Cabinet de recuperare medicală din Craiova, specializat în
               kinetoterapie, fizioterapie și terapii moderne, cu planuri de
               tratament personalizate pentru fiecare pacient.
@@ -326,9 +333,9 @@
           >
             <!-- Navigare -->
             <div>
-              <h4 class="text-lg font-semibold text-(--color-black) mb-7">
+              <h3 class="text-lg font-semibold text-(--color-black) mb-7">
                 Navigare
-              </h4>
+              </h3>
               <ul class="text-sm space-y-4">
                 <li>
                   <a
@@ -369,9 +376,9 @@
             </div>
             <!-- Program -->
             <div>
-              <h4 class="text-lg font-semibold text-(--color-black) mb-7">
+              <h3 class="text-lg font-semibold text-(--color-black) mb-7">
                 Program
-              </h4>
+              </h3>
               <ul class="text-sm space-y-4 font-medium text-(--color-gray)">
                 <li>Luni 09:00 - 14:00</li>
                 <li>Marți 09:00 - 20:00</li>
@@ -382,9 +389,9 @@
             </div>
             <!-- Contacte -->
             <div>
-              <h4 class="text-lg text-(--color-black) font-semibold mb-7">
+              <h3 class="text-lg text-(--color-black) font-semibold mb-7">
                 Contacte
-              </h4>
+              </h3>
               <ul class="text-sm space-y-5">
                 <li class="flex items-center gap-3">
                   <svg
@@ -477,17 +484,21 @@
         <!--Grid-->
         <div class="py-7 border-t border-gray-200">
           <div
-            class="flex items-start justify-start flex-col lg:item-center lg:justify-between lg:flex-row"
+            class="flex items-start justify-start flex-col lg:items-center lg:justify-between lg:flex-row"
           >
             <span class="font-medium text-sm text-(--color-gray)"
-              >©
-              <a href="https://cabinetrecuperare.ro/" target="_blank"
+              >© 2026
+              <a
+                href="https://cabinetrecuperare.ro/"
+                target="_blank"
+                class="hover:text-(--color-orange)"
                 >Health & Happiness</a
               >
-              2026 - All Rights reserved | Pagină realizată de
+              - All Rights reserved | Pagină realizată de
               <a
                 href="https://www.facebook.com/profile.php?id=100003889498544"
                 target="_blank"
+                class="hover:text-(--color-orange)"
                 >Vasile Roxana Andreea</a
               ></span
             >
@@ -495,6 +506,7 @@
               <a
                 href="https://www.facebook.com/profile.php?id=61566738747374"
                 target="_blank"
+                aria-label="Vizitează profilul nostru de Facebook (se deschide într-un tab nou)"
                 class="w-9 h-9 rounded-full bg-(--color-green) flex justify-center items-center hover:bg-(--color-orange)"
               >
                 <svg
@@ -513,6 +525,7 @@
               <a
                 href="https://www.instagram.com/cabinet.health_happiness/"
                 target="_blank"
+                aria-label="Vizitează profilul nostru de Instagram (se deschide într-un tab nou)"
                 class="w-9 h-9 rounded-full bg-(--color-green) flex justify-center items-center hover:bg-(--color-orange)"
               >
                 <svg
