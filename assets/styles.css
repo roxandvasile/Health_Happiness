@@ -1945,6 +1945,11 @@
       margin-top: 7.5rem;
     }
   }
+  .xl\:mr-6 {
+    @media (width >= 80rem) {
+      margin-right: calc(var(--spacing) * 6);
+    }
+  }
   .xl\:mr-\[3\.75rem\] {
     @media (width >= 80rem) {
       margin-right: 3.75rem;
@@ -2040,6 +2045,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
   }
+  .xl\:flex-col {
+    @media (width >= 80rem) {
+      flex-direction: column;
+    }
+  }
   .xl\:flex-row {
     @media (width >= 80rem) {
       flex-direction: row;
@@ -2093,6 +2103,11 @@
   .xl\:gap-x-20 {
     @media (width >= 80rem) {
       column-gap: calc(var(--spacing) * 20);
+    }
+  }
+  .xl\:gap-x-\[30px\] {
+    @media (width >= 80rem) {
+      column-gap: 30px;
     }
   }
   .xl\:gap-y-4 {
@@ -2184,6 +2199,11 @@
       margin-left: 6.25rem;
     }
   }
+  .\32 xl\:flex {
+    @media (width >= 96rem) {
+      display: flex;
+    }
+  }
   .\32 xl\:h-10 {
     @media (width >= 96rem) {
       height: calc(var(--spacing) * 10);
@@ -2219,9 +2239,29 @@
       width: 85%;
     }
   }
+  .\32 xl\:flex-row {
+    @media (width >= 96rem) {
+      flex-direction: row;
+    }
+  }
+  .\32 xl\:gap-6 {
+    @media (width >= 96rem) {
+      gap: calc(var(--spacing) * 6);
+    }
+  }
   .\32 xl\:gap-30 {
     @media (width >= 96rem) {
       gap: calc(var(--spacing) * 30);
+    }
+  }
+  .\32 xl\:gap-x-6 {
+    @media (width >= 96rem) {
+      column-gap: calc(var(--spacing) * 6);
+    }
+  }
+  .\32 xl\:gap-y-6 {
+    @media (width >= 96rem) {
+      row-gap: calc(var(--spacing) * 6);
     }
   }
   .\32 xl\:text-2xl {
